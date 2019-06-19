@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="W <= 89.5\nsamples = 924\nvalue = [734, 190]\nclass = No playoffs", fillcolor="#eca26c"] ;
+1 [label="W <= 87.5\nsamples = 694\nvalue = [671, 23]\nclass = No playoffs", fillcolor="#e68540"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="W <= 81.5\nsamples = 635\nvalue = [626, 9]\nclass = No playoffs", fillcolor="#e5833c"] ;
+1 -> 2 ;
+3 [label="samples = 471\nvalue = [471, 0]\nclass = No playoffs", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="samples = 164\nvalue = [155, 9]\nclass = No playoffs", fillcolor="#e78844"] ;
+2 -> 4 ;
+5 [label="RS <= 863.0\nsamples = 59\nvalue = [45, 14]\nclass = No playoffs", fillcolor="#eda877"] ;
+1 -> 5 ;
+6 [label="samples = 56\nvalue = [45, 11]\nclass = No playoffs", fillcolor="#eba069"] ;
+5 -> 6 ;
+7 [label="samples = 3\nvalue = [0, 3]\nclass = Playoffs", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="W <= 94.5\nsamples = 230\nvalue = [63, 167]\nclass = Playoffs", fillcolor="#84c2ef"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="RS <= 683.5\nsamples = 100\nvalue = [46, 54]\nclass = Playoffs", fillcolor="#e2f0fb"] ;
+8 -> 9 ;
+10 [label="samples = 19\nvalue = [16, 3]\nclass = No playoffs", fillcolor="#ea995e"] ;
+9 -> 10 ;
+11 [label="samples = 81\nvalue = [30, 51]\nclass = Playoffs", fillcolor="#add7f4"] ;
+9 -> 11 ;
+12 [label="OBP <= 0.345\nsamples = 130\nvalue = [17, 113]\nclass = Playoffs", fillcolor="#57ace9"] ;
+8 -> 12 ;
+13 [label="samples = 96\nvalue = [17, 79]\nclass = Playoffs", fillcolor="#64b2eb"] ;
+12 -> 13 ;
+14 [label="samples = 34\nvalue = [0, 34]\nclass = Playoffs", fillcolor="#399de5"] ;
+12 -> 14 ;
+}
